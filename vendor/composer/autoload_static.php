@@ -77,7 +77,6 @@ class ComposerStaticInit03053f7aa4865af4692dfff0de79a7fc
             'Psr\\Container\\' => 14,
             'PhpParser\\' => 10,
             'PhpCoveralls\\' => 13,
-            'Package\\' => 8,
             'PackageVersions\\' => 16,
             'PHPStan\\PhpDocParser\\' => 21,
             'PHPStan\\' => 8,
@@ -87,6 +86,7 @@ class ComposerStaticInit03053f7aa4865af4692dfff0de79a7fc
             'Orchestra\\Testbench\\BrowserKit\\' => 31,
             'Orchestra\\Testbench\\' => 20,
             'Opis\\Closure\\' => 13,
+            'OllieFordandCo\\GateKeeper\\' => 26,
         ),
         'M' => 
         array (
@@ -273,10 +273,6 @@ class ComposerStaticInit03053f7aa4865af4692dfff0de79a7fc
         array (
             0 => __DIR__ . '/..' . '/php-coveralls/php-coveralls/src',
         ),
-        'Package\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
         'PackageVersions\\' => 
         array (
             0 => __DIR__ . '/..' . '/ocramius/package-versions/src/PackageVersions',
@@ -301,6 +297,10 @@ class ComposerStaticInit03053f7aa4865af4692dfff0de79a7fc
         'Opis\\Closure\\' => 
         array (
             0 => __DIR__ . '/..' . '/opis/closure/src',
+        ),
+        'OllieFordandCo\\GateKeeper\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
         ),
         'Monolog\\' => 
         array (
@@ -2315,6 +2315,7 @@ class ComposerStaticInit03053f7aa4865af4692dfff0de79a7fc
         'Nette\\Utils\\Strings' => __DIR__ . '/..' . '/nette/utils/src/Utils/Strings.php',
         'Nette\\Utils\\UnknownImageFileException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
         'Nette\\Utils\\Validators' => __DIR__ . '/..' . '/nette/utils/src/Utils/Validators.php',
+        'OllieFordandCo\\GateKeeper\\Providers\\GateKeeperServiceProvider' => __DIR__ . '/../..' . '/src/Providers/GateKeeperServiceProvider.php',
         'Opis\\Closure\\Analyzer' => __DIR__ . '/..' . '/opis/closure/src/Analyzer.php',
         'Opis\\Closure\\ClosureContext' => __DIR__ . '/..' . '/opis/closure/src/ClosureContext.php',
         'Opis\\Closure\\ClosureScope' => __DIR__ . '/..' . '/opis/closure/src/ClosureScope.php',
@@ -3099,7 +3100,6 @@ class ComposerStaticInit03053f7aa4865af4692dfff0de79a7fc
         'PackageVersions\\FallbackVersions' => __DIR__ . '/..' . '/ocramius/package-versions/src/PackageVersions/FallbackVersions.php',
         'PackageVersions\\Installer' => __DIR__ . '/..' . '/ocramius/package-versions/src/PackageVersions/Installer.php',
         'PackageVersions\\Versions' => __DIR__ . '/..' . '/ocramius/package-versions/src/PackageVersions/Versions.php',
-        'Package\\Providers\\ServiceProvider' => __DIR__ . '/../..' . '/src/Providers/ServiceProvider.php',
         'Parsedown' => __DIR__ . '/..' . '/erusev/parsedown/Parsedown.php',
         'PharIo\\Manifest\\Application' => __DIR__ . '/..' . '/phar-io/manifest/src/values/Application.php',
         'PharIo\\Manifest\\ApplicationName' => __DIR__ . '/..' . '/phar-io/manifest/src/values/ApplicationName.php',

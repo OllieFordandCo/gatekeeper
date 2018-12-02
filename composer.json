@@ -22,20 +22,10 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Matthew Daly",
-            "email": "matthewbdaly@gmail.com"
+            "name": "Ruben Madila",
+            "email": "ruben@ollieford.co.uk"
         }
     ],
-    "autoload": {
-        "psr-4": {
-            "Package\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
-        }
-    },
     "scripts": {
         "post-create-project-cmd": [
             "php -r \"mkdir('bootstrap');\"",
@@ -52,10 +42,23 @@
         "optimize-autoloader": true
     },
     "extra": {
+      "branch-alias": {
+        "dev-master": "0.1.0-dev"
+      },
         "laravel": {
             "providers": [
-                "OllieFordandCo\\Providers\\GateKeeperServiceProvider"
+                "OllieFordandCo\\GateKeeper\\Providers\\GateKeeperServiceProvider"
             ]
         }
+    },
+  "autoload": {
+    "psr-4": {
+      "OllieFordandCo\\GateKeeper\\": "src/"
     }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  }
 }

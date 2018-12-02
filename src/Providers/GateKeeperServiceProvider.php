@@ -1,6 +1,6 @@
 <?php
 
-namespace OllieFordandCo\Providers;
+namespace OllieFordandCo\GateKeeper\Providers;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 use Illuminate\Support\Facades\Schema;
