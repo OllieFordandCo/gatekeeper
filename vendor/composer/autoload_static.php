@@ -39,7 +39,6 @@ class ComposerStaticInit03053f7aa4865af4692dfff0de79a7fc
         'T' => 
         array (
             'TijsVerkoyen\\CssToInlineStyles\\' => 31,
-            'Tests\\' => 6,
         ),
         'S' => 
         array (
@@ -86,6 +85,7 @@ class ComposerStaticInit03053f7aa4865af4692dfff0de79a7fc
             'Orchestra\\Testbench\\BrowserKit\\' => 31,
             'Orchestra\\Testbench\\' => 20,
             'Opis\\Closure\\' => 13,
+            'OllieFordandCo\\Tests\\' => 21,
             'OllieFordandCo\\GateKeeper\\' => 26,
         ),
         'M' => 
@@ -156,10 +156,6 @@ class ComposerStaticInit03053f7aa4865af4692dfff0de79a7fc
         'TijsVerkoyen\\CssToInlineStyles\\' => 
         array (
             0 => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src',
-        ),
-        'Tests\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/tests',
         ),
         'Symfony\\Polyfill\\Php72\\' => 
         array (
@@ -297,6 +293,10 @@ class ComposerStaticInit03053f7aa4865af4692dfff0de79a7fc
         'Opis\\Closure\\' => 
         array (
             0 => __DIR__ . '/..' . '/opis/closure/src',
+        ),
+        'OllieFordandCo\\Tests\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/tests',
         ),
         'OllieFordandCo\\GateKeeper\\' => 
         array (
@@ -4528,10 +4528,6 @@ class ComposerStaticInit03053f7aa4865af4692dfff0de79a7fc
         'Symfony\\Polyfill\\Ctype\\Ctype' => __DIR__ . '/..' . '/symfony/polyfill-ctype/Ctype.php',
         'Symfony\\Polyfill\\Mbstring\\Mbstring' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/Mbstring.php',
         'Symfony\\Polyfill\\Php72\\Php72' => __DIR__ . '/..' . '/symfony/polyfill-php72/Php72.php',
-        'Tests\\BrowserKitTestCase' => __DIR__ . '/../..' . '/tests/BrowserKitTestCase.php',
-        'Tests\\CreatesApplication' => __DIR__ . '/../..' . '/tests/CreatesApplication.php',
-        'Tests\\SimpleTestCase' => __DIR__ . '/../..' . '/tests/SimpleTestCase.php',
-        'Tests\\TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
         'TheSeer\\Tokenizer\\Exception' => __DIR__ . '/..' . '/theseer/tokenizer/src/Exception.php',
         'TheSeer\\Tokenizer\\NamespaceUri' => __DIR__ . '/..' . '/theseer/tokenizer/src/NamespaceUri.php',

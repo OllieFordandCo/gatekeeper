@@ -17,7 +17,6 @@
         "psy/psysh": "^0.9.8",
         "sebastian/phpcpd": "^4.0",
         "squizlabs/php_codesniffer": "^3.3"
-
     },
     "license": "MIT",
     "authors": [
@@ -45,11 +44,11 @@
       "branch-alias": {
         "dev-master": "0.1.0-dev"
       },
-        "laravel": {
-            "providers": [
-                "OllieFordandCo\\GateKeeper\\Providers\\GateKeeperServiceProvider"
-            ]
-        }
+      "laravel": {
+          "providers": [
+              "OllieFordandCo\\GateKeeper\\Providers\\GateKeeperServiceProvider"
+          ]
+      }
     },
   "autoload": {
     "psr-4": {
@@ -58,7 +57,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Tests\\": "tests/"
+      "OllieFordandCo\\Tests\\": "tests/"
     }
   }
 }

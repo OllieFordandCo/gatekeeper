@@ -113,7 +113,7 @@ final class Versions
   'theseer/fdomdocument' => '1.6.6@6e8203e40a32a9c770bcb62fe37e68b948da6dca',
   'theseer/tokenizer' => '1.1.0@cb2f008f3f05af2893a87208fe6a6c4985483f8b',
   'webmozart/assert' => '1.3.0@0df1908962e7a3071564e857d86874dad1ef204a',
-  'olliefordandco/gatekeeper' => '0.1.0.x-dev@a4dee6a268c8aa1c6263c159ecdf82dde7f7c561',
+  'olliefordandco/gatekeeper' => '0.1.0.x-dev@fc3f6cf41567c000531972ff4b01378b54588103',
 );
 
     private function __construct()
