@@ -22,7 +22,7 @@ class GateKeeperServiceProvider extends BaseServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         $this->loadRoutesFrom(__DIR__.'/../../routes/web.php');
         $this->loadViewsFrom(__DIR__.'/../../resources/views', 'gatekeeper');
-        $this->loadTranslationsFrom(__DIR__ . '/../../resources/lang', 'gatekeeper');
+        $this->loadTranslationsFrom(__DIR__ . '/../../resources/lang', 'amaranth');
     }
 
     /**
