@@ -164,11 +164,11 @@
                                             <a href="./install" class="btn btn-primary my-3">Start installation</a>
                                             <?php } else {
 
-                                                ?>
+                                            ?>
 
-                                                <a href="{{ route('loginWith', ['provider' => 'facebook']) }}" class="btn btn-primary mb-2">
-                                                    <i class="fab fa-facebook mr-2"></i> {{ __('Login with Facebook') }}
-                                                </a>
+                                            <a href="{{ route('loginWith', ['provider' => 'facebook']) }}" class="btn btn-primary mb-2">
+                                                <i class="fab fa-facebook mr-2"></i> {{ __('Login with Facebook') }}
+                                            </a>
                                             <form method="POST" action="{{ route('login') }}"
                                                   class="card-block grid-row text-white text-center">
                                                 @csrf
