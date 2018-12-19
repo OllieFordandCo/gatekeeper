@@ -25,7 +25,7 @@ class VerificationController extends Controller
      *
      * @@return string
      */
-    public function redirectTo() {
+    public function redirectPath() {
         return '/dashboard';
     }
 
