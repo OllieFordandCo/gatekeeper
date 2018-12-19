@@ -24,9 +24,11 @@ class LoginController extends Controller
     /**
      * Where to redirect users after login.
      *
-     * @var string
+     * @@return string
      */
-    protected $redirectTo = '/dashboard';
+    public function redirectTo() {
+        return '/dashboard';
+    }
 
 
     /**
