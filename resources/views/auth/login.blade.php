@@ -1,83 +1,6 @@
-<!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('uiManager::layouts.app')
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{config('app.name', 'amaranth')}}</title>
-
-    <!-- Stylesheets -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,600,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href="{{asset('/assets/css/amaranth-ui.css')}}" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
-    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
-    <style>
-        html {
-            text-rendering: optimizeLegibility;
-            -webkit-font-smoothing: antialiased;
-            -moz-font-smoothing: unset;
-            -moz-osx-font-smoothing: grayscale;
-            font-smoothing: antialiased;
-            -webkit-backface-visibility: hidden;
-            -moz-backface-visibility: hidden;
-            backface-visibility: hidden;
-        }
-
-        html, body {
-            background-color: #f4f7f8;
-            color: #767676;
-            font-weight: 400;
-            height: 100%;
-            margin: 0;
-            overflow-x: hidden;
-            position: relative;
-        }
-
-        .bg-half {
-            position: absolute;
-            top: -30px;
-            left: -30px;
-            right: -30px;
-            height: 50%;
-            z-index: 0;
-            background-color: #c30d40;
-            box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.2);
-        }
-
-        .full-height {
-            height: 100%;
-        }
-
-        .title {
-            color: #333333 !important;
-            -webkit-background-clip: text;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            letter-spacing: -0.17rem;
-            line-height: 1em;
-            font-weight: 500;
-        }
-        .orb {
-            width: 7px;
-            height: 7px;
-            border-radius: 50%;
-            background-color: #fff;
-            display: inline-block;
-        }
-
-        .scroll-content {
-            width: 100% !important;
-        }
-    </style>
-</head>
-<body class="bg-primary">
-<div class="bg-half"></div>
+@section('content')
 <div class="p-relative full-height">
     <div class="content v-align p-relative">
         <div>
@@ -201,5 +124,4 @@
         </div>
     </div>
 </div>
-</body>
-</html>
+@endsection
