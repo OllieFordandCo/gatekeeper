@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href="{{asset('/vendor/amaranth/assets/css/amaranth-ui.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('/assets/css/amaranth-ui.css')}}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
     <script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
     <style>
@@ -36,6 +36,7 @@
             height: 100%;
             margin: 0;
             overflow-x: hidden;
+            position: relative;
         }
 
         .bg-half {
@@ -62,47 +63,6 @@
             line-height: 1em;
             font-weight: 500;
         }
-
-        .card {
-            background-color: #fff;
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(0, 0, 0, 0.15);
-            border-radius: 7px;
-        }
-
-        .card.card-dark {
-            background: rgb(34, 34, 34); /* Old browsers */
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-            border-right: 1px solid rgba(255, 255, 255, 0.05);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 15px;
-        }
-
-        .card.card-contained {
-            overflow: hidden;
-        }
-
-        .card > header {
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        p {
-            font-weight: 400;
-        }
-
-        .card-sidebar {
-            background-color: rgba(255, 255, 255, 0.03);
-        }
-
-        .card-sidebar .btn {
-            background-color: transparent;
-            transition: all 300ms linear;
-        }
-
-        .card-sidebar .btn:hover, .card-sidebar .active .btn {
-            background-color: rgba(0, 0, 0, 0.1);
-        }
-
         .orb {
             width: 7px;
             height: 7px;
@@ -124,16 +84,16 @@
             <div class="container-xs mx-auto">
                 <div class="grid-row text-center">
                     <div class="col-12">
-                        <h1 class="text-white display-3 my-1">{{ config('app.name') }}</h1>
-                        <main class="card card-dark card-contained my-3">
+                        <h1 class="display-3 my-1">{{ config('app.name') }}</h1>
+                        <main class="card card-contained my-3">
                             <header class="px-3 py-1">
                                 <h5 class="my-1 text-grey-light text-thin">Getting Started</h5>
                             </header>
                             <article class="grid-row text-left">
                                 <div class="col-12" style="max-height:calc(100vh - 300px);">
                                     <div class="scroll-content text-center py-3 px-3" data-simplebar>
-                                        <h2 class="h5 text-white mb-2">Let's get this show on the road!</h2>
-                                        <div class="card-block text-white">
+                                        <h2 class="h5 mb-2">Let's get this show on the road!</h2>
+                                        <div class="card-block">
                                             <?php if(!\Schema::hasTable('users')) { ?>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Hoc loco
                                                     tenere se Triarius non potuit.</b> Sed id ne cogitari quidem potest
@@ -166,7 +126,7 @@
 
                                                 ?>
 
-                                                <a href="{{ route('loginWith', ['provider' => 'facebook']) }}" class="btn btn-primary mb-2">
+                                                <a href="{{ route('loginWith', ['provider' => 'facebook']) }}" class="btn btn-facebook mb-2">
                                                     <i class="fab fa-facebook mr-2"></i> {{ __('Login with Facebook') }}
                                                 </a>
                                             <form method="POST" action="{{ route('login') }}"
@@ -174,10 +134,10 @@
                                                 @csrf
 
                                                 <div class="col-12">
-                                                    <label for="email">{{ __('E-Mail Address') }}</label>
+                                                    <label for="email" class="sr-only">{{ __('E-Mail Address') }}</label>
                                                     <input id="email" type="email"
                                                            class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
-                                                           name="email" value="{{ old('email') }}" required autofocus>
+                                                           name="email" value="{{ old('email') }}" placeholder="{{ __('E-Mail Address') }}" required autofocus>
 
                                                     @if ($errors->has('email'))
                                                         <span class="invalid-feedback" role="alert">
@@ -187,10 +147,10 @@
                                                 </div>
 
                                                 <div class="col-12">
-                                                    <label for="password">{{ __('Password') }}</label>
+                                                    <label for="password" class="sr-only">{{ __('Password') }}</label>
                                                     <input id="password" type="password"
                                                            class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
-                                                           name="password" required>
+                                                           name="password" placeholder="{{ __('Password') }}" required>
 
                                                     @if ($errors->has('password'))
                                                         <span class="invalid-feedback" role="alert">
@@ -231,7 +191,7 @@
                     </div>
                     <div class="col-12">
                         <footer>
-                            <small class="text-white text-center p-2 d-block">Copyright &copy. Ollie Ford & Co. All
+                            <small class="text-center p-2 d-block">Copyright &copy. Ollie Ford & Co. All
                                 rights reserved.
                             </small>
                         </footer>
