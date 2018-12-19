@@ -7,7 +7,7 @@
             <div class="container-xs mx-auto">
                 <div class="grid-row text-center">
                     <div class="col-12">
-                        <h1 class="display-3 my-1">{{ config('app.name') }}</h1>
+                        @include('uiManager::components.branding.logo')
                         <main class="card card-contained my-3">
                             <header class="px-3 py-1">
                                 <h5 class="my-1 text-grey-light text-thin">Getting Started</h5>
