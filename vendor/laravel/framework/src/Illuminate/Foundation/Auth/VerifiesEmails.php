@@ -11,6 +11,24 @@ trait VerifiesEmails
     use RedirectsUsers;
 
     /**
+     * Where to redirect users after login.
+     *
+     * @@return string
+     */
+    public function redirectTo() {
+        return '/dashboard';
+    }
+
+    /**
+     * Where to redirect users after login.
+     *
+     * @@return string
+     */
+    public function redirectPath() {
+        return $this->redirectTo();
+    }
+
+    /**
      * Show the email verification notice.
      *
      * @param  \Illuminate\Http\Request  $request

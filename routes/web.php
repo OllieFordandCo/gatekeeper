@@ -14,7 +14,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::post('login', 'OllieFordandCo\GateKeeper\Http\Controllers\Auth\LoginController@login');
     Route::get('login', 'OllieFordandCo\GateKeeper\Http\Controllers\Auth\LoginController@showLoginForm')->name('login');
     Route::get('login/{provider?}', 'OllieFordandCo\GateKeeper\Http\Controllers\Auth\LoginController@redirectToProvider')->name('loginWith');
-    Route::post('logout', 'OllieFordandCo\GateKeeper\Http\Controllers\Auth\LoginController@logout')->name('logout');
+    Route::post('logout', 'OllieFordandCo\GateKeeper\Http\Controllers\Auth\LoginController@logou    t')->name('logout');
     Route::get('authorise/{provider}', 'OllieFordandCo\GateKeeper\Http\Controllers\Auth\LoginController@handleProviderCallback')->name('authorise');
 
 
