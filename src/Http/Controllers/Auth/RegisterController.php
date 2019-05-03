@@ -28,7 +28,7 @@ class RegisterController extends Controller
      *
      * @@return string
      */
-    public function redirectPath() {
+    public function redirectTo() {
         return '/dashboard';
     }
 

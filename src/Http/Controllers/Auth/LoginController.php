@@ -26,8 +26,17 @@ class LoginController extends Controller
      *
      * @@return string
      */
-    public function redirectPath() {
+    public function redirectTo() {
         return '/dashboard';
+    }
+
+    /**
+     * Where to redirect users after login.
+     *
+     * @@return string
+     */
+    public function redirectPath() {
+        return $this->redirectTo();
     }
 
 
