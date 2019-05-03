@@ -1,0 +1,39 @@
+.site {
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.site-branding {
+  text-align: center;
+  padding: 0 0 $spacer-md 0;
+}
+
+.site-wrapper {
+  margin-bottom: 40px;
+}
+
+.site-title, .site-title a {
+  color: #555 !important;
+  text-decoration: none;
+  margin: 0;
+  line-height: 1;
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: -.05em;
+}
+
+.site-description {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+.site-footer {
+  padding: $spacer-md;
+}
+
+.site-info {
+  text-align: center;
+}

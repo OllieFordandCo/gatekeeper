@@ -1,0 +1,35 @@
+
+body {
+  background: #ecf3f3;
+}
+
+.particle-cloud {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.particle-cloud [data-icon] {
+  position: absolute;
+}
+
+@for $i from 1 through 120 {
+  @keyframes particle-animation-#{$i} {
+    100% {
+      transform: translate3d((random(90) * 1vw), (random(90) * 1vh), 0);
+    }
+  }
+
+  .particle-cloud [data-icon]:nth-child(#{$i}){
+    animation: particle-animation-#{$i} 60s infinite;
+    $size: (random(3) * 1rem) + 1rem;
+    opacity: (random(15)/100) + .05;
+    font-size: $size;
+    animation-delay: -$i * .2s;
+    $degrees: random(360) - 360;
+    transform: rotate($degrees * 1deg) translate3d((random(110) * 1vw), (random(110) * 1vh), 0);
+    $shade-of-grey: random(180 + 70);
+    color: rgb($shade-of-grey,$shade-of-grey,$shade-of-grey);
+  }
+}

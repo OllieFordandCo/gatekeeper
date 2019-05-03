@@ -1,0 +1,10 @@
+body a {
+  color: #000;
+  transition: all 300ms linear;
+  text-decoration: none;
+}
+
+body a:hover, body a:visited {
+  color: #555;
+}
+

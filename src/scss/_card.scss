@@ -1,0 +1,37 @@
+.card-title {
+  margin: $spacer 0 $spacer-xl 0;
+  line-height: 1.2;
+}
+
+.card-container .card {
+  >header {
+    padding: 1px;
+    border-bottom: 1px solid #eee;
+    margin: 0 $spacer $spacer;
+  }
+  &.card-xs {
+    min-width: 22rem;
+    max-width: 27rem;
+  }
+
+  padding: $spacer-xxl $spacer-xl;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  background-color: #ffffff;
+  .card-block {
+    margin: $spacer;
+  }
+}
+
+.card-container form label {
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.login-info, .login-error {
+  font-size: 12px;
+  display: block;
+}
