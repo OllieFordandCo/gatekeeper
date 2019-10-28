@@ -4,7 +4,7 @@
     "type": "library",
     "keywords": ["laravel","lumen"],
     "require": {
-        "laravel/socialite": "^3.2"
+        "laravel/socialite": "^4.2"
     },
     "require-dev": {
         "matthewbdaly/artisan-standalone": "0.0.*",
