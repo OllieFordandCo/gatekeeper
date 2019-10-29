@@ -22,5 +22,4 @@ Route::group(['middleware' => ['web']], function () {
     Route::post('password/email', 'OllieFordandCo\GateKeeper\Http\Controllers\Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
     Route::get('password/reset/{token}', 'OllieFordandCo\GateKeeper\Http\Controllers\Auth\ResetPasswordController@showResetForm')->name('password.reset');
     Route::post('password/reset', 'OllieFordandCo\GateKeeper\Http\Controllers\Auth\ResetPasswordController@reset')->name('password.update');
-    
 });
